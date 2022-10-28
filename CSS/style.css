@@ -1,4 +1,7 @@
-/* main colo #e65f78 !important */
+:root{
+    --mainColor:#e65f78;
+
+}
 body
 {
     font-family: 'Nunito', sans-serif;
@@ -25,7 +28,7 @@ nav .nav-link
 }
 nav .nav-link.active , .nav-link:hover
 {
-    color: #e65f78 !important;
+    color: var(--mainColor) !important;
 }
 /* ============= end navbar style ============= */
 
@@ -542,14 +545,14 @@ header .header-layer
 }
 #services .service i
 {
-    color: #e65f78;
+    color: var(--mainColor);
     font-size: 44px;
 }
 #services .service .line
 {
     width: 10%;
     height: 2px;
-    background-color: #e65f78;
+    background-color: var(--mainColor);
     transition: 0.3s all;
 }
 #services .service:hover .line
@@ -562,12 +565,12 @@ header .header-layer
 /* ============= start clients section style ============= */
 #clients .client i
 {
-    color: #e65f78;
+    color: var(--mainColor);
     font-size: 50px;
 }
 #clients .carousel-indicators button
 {
-    background-color: #e65f78 !important;
+    background-color: var(--mainColor) !important;
     width: 12px !important;
     height: 6px !important;
     border: 1px solid transparent;
@@ -590,7 +593,7 @@ header .header-layer
 }
 #works .nav .nav-link:hover , #works .nav .nav-link.active
 {
-    background-color: #e65f78;
+    background-color: var(--mainColor);
     color: white !important;
 }
 #works .work 
@@ -628,3 +631,34 @@ header .header-layer
     top: 0;
 }
 /* ============= end works section style ============= */
+/* ============= start contact section style ============= */
+
+
+#contacts .fas{
+    color: var(--mainColor);
+    cursor: pointer;
+}
+
+#contacts .btn{
+    padding:15px 30px;
+    background-color: var(--mainColor);
+    color: #fff;
+}
+
+#contacts .form-control:focus{box-shadow: unset;
+    border-color: var(--mainColor);
+    border-width: 3px;
+}   
+                     
+.line{
+    width:200px;
+    height: 5px;
+    background-color: var(--mainColor);
+    transition:width .5s ease-in-out ;
+    -webkit-transition:width .5s ease-in-out ;
+    -moz-transition:width .5s ease-in-out ;
+    -ms-transition:width .5s ease-in-out ;
+    -o-transition:width .5s ease-in-out ;
+}
+
+.line:hover{width: 400px;}                     
